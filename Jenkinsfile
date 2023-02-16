@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh './PES2UG20CS401-1'
+                sh 'PES2UG20CS401-1'
             }
         }
     }
@@ -20,6 +20,6 @@ pipeline {
         }
         failure {
             echo 'Pipeline failed'
-        
+        }
     }
 }
